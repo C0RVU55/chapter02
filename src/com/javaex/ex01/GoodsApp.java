@@ -50,11 +50,16 @@ public class GoodsApp {
 		//카메라
 		camera.setName("니콘"); //값 등록
 		String name=camera.getName(); //값 불러오기
-		System.out.println(name); //이렇게 복잡하게 하는 이유는 정확한 값을 넣기 위함.
+		//System.out.println(name); //이렇게 복잡하게 하는 이유는 정확한 값을 넣기 위함.
 		
 		camera.setPrice(400000);
 		int price=camera.getPrice();
-		System.out.println(price);
+		//System.out.println(price);
+		
+		//System.out.println("상품이름: "+name+"\n가격: "+price);
+		//위와 같이 출력해도 되지만 내용이 바뀔 경우 일일이 수정하기 힘들기 때문에 class에 출력 기능을 넣을 수 있음.
+		
+		camera.showInfo(); 
 		
 		//컴퓨터
 		Goods computer =new Goods();
@@ -66,6 +71,8 @@ public class GoodsApp {
 		int comPrice=computer.getPrice();
 		System.out.println(comPrice);
 		
+		computer.showInfo();
+		
 		//머그컵
 		Goods cup=new Goods();
 		
@@ -76,6 +83,8 @@ public class GoodsApp {
 		
 		System.out.println(mName);
 		System.out.println(mPrice);
+		
+		cup.showInfo();
 		
 		/*
 		만들어 놓은 class(값대입하고 어쩌구하는 거에 영향 안 받음. 그냥 틀임.)
@@ -98,7 +107,7 @@ public class GoodsApp {
 		 				   │                     │
 		-------------------│---------------------│-------------------------------
 						   │                     │
-		힙				 □0x123 Goods            □0x555 Goods         <--메모리에 올라온 class(이걸로 작업함.)
+		힙				 □0x123 Goods            □0x555 Goods         <--메모리에 올라온 class에 직접 손댈 순 없지만 작업은 이걸로 함.
 		(실제데이터      String name=camera;     String name=computer;
 		저장 영역)       int price=400000;       int price=1000000;
 		

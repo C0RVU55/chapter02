@@ -15,12 +15,13 @@ public class Goods {
 	
 	
 	//생성자
-	//메소드-getter/setter
 	
+	//메소드-getter/setter
 	//메소드-일반 : 정의 방식과 호출 방식이 다름.
-	//name 등록하는 기능 : setName()
+	
+	//name 등록하는 기능 : setName() --> 이런 작명 방식은 암묵적인 룰.
 	public void setName(String n) { //그릇으로 받을 값은 문자열이고 변수는 n으로 하나 잡아 놓은 거.
-		name=n; 
+		name=n; //(String name) this.name=name --> this.name은 필드의 name를 뜻함. 변수 구분을 위해 this 쓰는 게 좋음.
 	}
 	/*
 	private "니콘" "LG그램" "머그컵" 등 같은 클래스 안에서는 값 대입 가능.
@@ -43,6 +44,11 @@ public class Goods {
 	//price 읽어주는 기능 : getPrice()
 	public int getPrice() { //대답할 때 뭐로 대답할지 자료형 쓰는 거.
 		return price;
+	}
+	
+	//출력 : 일일이 다 쓰기 힘드니까 class에 출력 기능을 넣음.
+	public void showInfo() {
+		System.out.println("상품명: "+name+"\n가격: "+price);
 	}
 	
 
