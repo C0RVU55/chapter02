@@ -31,7 +31,7 @@ public class TV {
 	}
 	*/
 	
-	//메소드 일반
+	//메소드 일반 --> power true일 때만 채널 및 볼륨 변경되도록 수정하기
 	public void power(boolean on) {
 		if(on==true) {
 			power=true;
