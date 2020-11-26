@@ -2,7 +2,7 @@ package com.javaex.ex09;
 
 public class TVApp {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { //<--main은 우선적으로 실행되는 메소드.
 		
 		TV tv=new TV(7,20,false);
 		

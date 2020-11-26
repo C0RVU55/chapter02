@@ -15,8 +15,8 @@ public class Goods {
 	// ***기본생성자는 다른 생성자가 있으면 생략 불가능***
 	// 코드 넣을 거 없으니까 중괄호 위치 이렇게 쓰기도 함.
 
-	public Goods(String name, int price) {
-		this.name = name;
+	public Goods(String name, int price) { //괄호 안의 변수는 필드의 변수와 다름. 이 생성자 안에서 쓰이고 끝나는 변수임.
+		this.name = name; //이 생성자의 변수(외부에서 받은 거)를 메모리에 올라간 틀의 필드에 올리는 거.
 		this.price = price;
 	}
 

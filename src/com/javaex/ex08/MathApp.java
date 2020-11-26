@@ -5,6 +5,7 @@ public class MathApp {
 	public static void main(String[] args) {
 		// 메소드 오버로드 예제
 		
+		
 		Math myMath=new Math();
 		
 		int sum01=myMath.plus(3,4);
