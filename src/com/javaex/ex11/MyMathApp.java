@@ -42,7 +42,11 @@ public class MyMathApp {
 
 	}
 	
-	//메소드 : main에서 그냥 메소드가 안 써지는 건 main 자체가 static이라 여기서 쓰는 메소드도 static이어야 같이 쓸 수 있음. 
+	/*
+	main 안에서 메소드 쓰기 : 
+	main에서 그냥 메소드가 안 써지는 건 main 자체가 static이라 여기서 쓰는 메소드도 static이어야 같이 쓸 수 있음.
+	main은 void라 값을 return 받을 수 없기 때문에 main 밖에 써야 됨.
+	*/
 	public static int minus(int a, int b) {
 		return a-b;
 	}
