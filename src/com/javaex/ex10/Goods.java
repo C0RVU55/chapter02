@@ -15,6 +15,12 @@ public class Goods {
 	//4.인스턴스(우리가 정한 이름 카메라 등)이 생기기 전에 올라가는 거라 Goods.totalCount 이렇게 클래스명으로 씀.
 	//사실 스태틱에는 변수에 값 저장하는 거 위험성이 있어서 잘 안 씀. 작동이 안 되도 문제없는 기능을 주로 넣음.
 	
+	//그래서 static에 값 대입 지양해야 되는데 만약에 모든 상품을 출력하고 싶다 이러면 배열에 넣고 for문 돌림.
+	/*배열의 자료형은 클래스명이고 각 배열칸에 각 메모리에 올라온 틀을 넣음. Goods[] goodsAttay=new Goods{0x111, 0x222, 0x333}
+	camera.getName();
+	goodsArray[0].getName();
+	*/
+	
 	
 	//생성자
 	public Goods() {
