@@ -69,6 +69,20 @@ public class PersonApp {
 		for(int i=0; i<pArr.length; i++) {
 			pArr[i].showInfo();
 		}
+		
+		//Person배열의 자료형을 Student로 바꿈 : 부모쪽 정보만 쓸 수 있는데 이걸 자식쪽까지 쓸 수 있게 확장 가능. 
+		//우선순위는 Person이고 필요할 때 Student까지 확장해서 정보 사용 가능. 
+		System.out.println(((Student)pArr[3]).getSchoolName());
+		
+		//학교명 변경
+		((Student)pArr[4]).setSchoolName("정문여상");
+		System.out.println(((Student)pArr[4]).getSchoolName());
+		
+		//캐스팅 테스트
+		Person t01=pArr[4];
+		//Student t02=pArr[4]; 양쪽 자료형이 달라서 오류
+		Student t03=(Student)pArr[4];
+		Person t04=(Student)pArr[4]; //upcasting : 자식이 부모클래스(더 큰 거)로 자동으로 변환돼서 들어감. 부모가 자식으로 들어가려면 강제로 변환시켜야 됨.
 	}
 
 }
