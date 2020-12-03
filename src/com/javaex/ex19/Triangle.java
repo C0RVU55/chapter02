@@ -1,6 +1,6 @@
 package com.javaex.ex19;
 
-public class Triangle extends Shape {
+public class Triangle extends Shape implements Drawable{
 	
 	//필드
 	private int b;

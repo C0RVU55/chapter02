@@ -2,6 +2,8 @@ package com.javaex.ex19;
 
 public abstract class Shape {
 	
+	//Shape : 추상클래스+부모클래스
+	
 	//필드
 	protected String fillColor;
 	protected String lineColor;
@@ -34,7 +36,7 @@ public abstract class Shape {
 		return "Shape [fillColor=" + fillColor + ", lineColor=" + lineColor + "]";
 	}
 	
-	public abstract void draw();
+	// public abstract void draw(); 인터페이스에 넣을 거라(개념이동) 여기 있을 필요없음.
 	public abstract double area();
 	
 }

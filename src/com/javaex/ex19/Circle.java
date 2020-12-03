@@ -1,6 +1,6 @@
 package com.javaex.ex19;
 
-public class Circle extends Shape { 
+public class Circle extends Shape implements Drawable{ 
 	//추상클래스랑 상속관계가 되면 부모클래스의 메소드 갖다쓰라고 오류가 나기 때문에 abstract 메소드를 먼저 옮기게 됨.
 	
 	//필드
