@@ -12,7 +12,7 @@ public class ShapeApp {
 		*/
 		
 		//배열 선언
-		Shape[] shape=new Shape[4];
+		Shape[] shape=new Shape[5];
 		
 		//변수(클래스) 선언
 		Shape r1=new Ractangle("파랑","초록",20,5);
@@ -21,12 +21,14 @@ public class ShapeApp {
 		Shape c1=new Circle("검정","파랑",5);
 		Shape c2=new Circle("보라","하늘",7);
 		//System.out.println(c1.toString());
+		Shape t1=new Triangle("연두","주황",5,6);
 		
 		//배열에 넣기
 		shape[0]=r1;
 		shape[1]=r2;
 		shape[2]=c1;
 		shape[3]=c2;
+		shape[4]=t1;
 		
 		//출력
 		for(int i=0; i<shape.length; i++) {
